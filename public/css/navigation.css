@@ -1,0 +1,48 @@
+.nav {
+    position: fixed;
+    padding: 0 40px;
+    top: 0;
+    right: 0;
+    background: #020000A6;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: normal normal normal 22px/29px Rockwell Nova;
+}
+
+.nav__img {
+    width: 160px;
+    height: 144px;
+}
+
+.list {
+    display: flex;
+    padding: 0;
+}
+
+.listItem {
+    margin-right: 30px;
+    list-style: none;
+}
+
+.listLink {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.listLink:hover {
+    border-bottom: 1px solid white;
+}
+
+.icon {
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+}
