@@ -1,12 +1,21 @@
 .section {
-    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    height: 100vh;
 }
 
 .section__paragraph {
-    max-width: 40%;
-    font: normal normal normal 35px/46px Rockwell Nova;
+    max-width: 35%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.section__imageContainer {
+    max-width: 45%;
+}
+
+.section__image {
+    max-width: 100%;
 }
