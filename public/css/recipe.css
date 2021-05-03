@@ -4,3 +4,38 @@
     justify-content: center;
     align-items: center;
 }
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.section__filter {
+    background-image: url(../img/cookDesk.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    padding: 7.5vw;
+    position: relative;
+    z-index: 0;
+    height: calc(100vh - 125px);
+    margin-top: 125px;
+}
+
+.section__filter::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #020000A6;
+    z-index: -1;
+}
+
+.section__desk {
+    height: 100vh;
+    width: 100%;
+}
