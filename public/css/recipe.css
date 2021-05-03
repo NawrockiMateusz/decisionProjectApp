@@ -17,11 +17,12 @@
     background-position: center center;
     color: white;
     text-align: center;
-    padding: 7.5vw;
     position: relative;
-    z-index: 0;
+    max-width: 300px;
+    width: 100%;
     height: calc(100vh - 125px);
     margin-top: 125px;
+    z-index: 0;
 }
 
 .section__filter::after {
@@ -35,7 +36,16 @@
     z-index: -1;
 }
 
-.section__desk {
-    height: 100vh;
-    width: 100%;
+.section__searchBar {
+    max-width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(../img/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    border-radius: 25px;
 }
