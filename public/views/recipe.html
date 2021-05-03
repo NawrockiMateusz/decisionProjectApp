@@ -32,80 +32,88 @@
     </nav>
     <section class="section">
         <div class="section__filter">
-            <h2>- Recipes -</h2>
-            <form>
+            <h2 class="section__headerFilter">- Recipes -</h2>
+            <form class="section__serach">
                 <input type="text" name="search" placeholder="Search.." class="section__searchBar">
             </form>
-            <fieldset>
-                <legend>Without:</legend>
-                <ul>
-                    <li>
+
+            <fieldset class="section__filter--without">
+                <legend class="section__legend">Without:</legend>
+                <ul class="section__list--without">
+                    <li class="section__listItem">
                         <label>
-                            <input type="checkbox" name="Without meat">meat
+                            <input type="checkbox" name="Without meat" class="section__listItem--without">meat
 
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="checkbox" name="Without sugar">sugar
+                            <input type="checkbox" name="Without sugar" class="section__listItem--without">sugar
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="checkbox" name="Without lactose">lactose
+                            <input type="checkbox" name="Without lactose" class="section__listItem--without">lactose
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="checkbox" name="Without salt">salt
+                            <input type="checkbox" name="Without salt" class="section__listItem--without">salt
                         </label>
                     </li>
                 </ul>
             </fieldset>
 
-            <fieldset>
-                <legend>Up to:</legend>
-                <ul>
-                    <li>
+            <fieldset class="section__filter__upTo">
+                <legend class="section__legend">Up to:</legend>
+                <ul class="section__list--upTo">
+                    <li class="section__listItem">
                         <label>
-                            <input type="radio" name="favouriteSinger" value="badach">100 kcal
+                            <input type="radio" name="favouriteSinger" value="badach"
+                                class="section__listItem--upTo">100 kcal
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="radio" name="favouriteSinger" value="timberlake">250 kcal
+                            <input type="radio" name="favouriteSinger" value="timberlake"
+                                class="section__listItem--upTo">250 kcal
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="radio" name="favouriteSinger" value="timberlake">300 kcal
+                            <input type="radio" name="favouriteSinger" value="timberlake"
+                                class="section__listItem--upTo">300 kcal
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="radio" name="favouriteSinger" value="timberlake">350 kcal
+                            <input type="radio" name="favouriteSinger" value="timberlake"
+                                class="section__listItem--upTo">350 kcal
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="radio" name="favouriteSinger" value="timberlake">400 kcal
+                            <input type="radio" name="favouriteSinger" value="timberlake"
+                                class="section__listItem--upTo">400 kcal
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="radio" name="favouriteSinger" value="timberlake">450 kcal
+                            <input type="radio" name="favouriteSinger" value="timberlake"
+                                class="section__listItem--upTo">450 kcal
                         </label>
                     </li>
-                    <li>
+                    <li class="section__listItem">
                         <label>
-                            <input type="radio" name="favouriteSinger" value="timberlake">500 kcal
+                            <input type="radio" name="favouriteSinger" value="timberlake"
+                                class="section__listItem--upTo">500 kcal
                         </label>
                     </li>
                 </ul>
             </fieldset>
-            <div>
-                <button>Filter</button>
-                <button>Add recipe</button>
+            <div class="section__buttonsContainer">
+                <button class="section__button">Filter</button>
+                <button class="section__button">Add recipe</button>
             </div>
 
         </div>
