@@ -18,7 +18,7 @@
     color: white;
     text-align: center;
     position: relative;
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     height: calc(100vh - 125px);
     margin-top: 125px;
@@ -37,15 +37,69 @@
 }
 
 .section__searchBar {
-    max-width: 250px;
+    max-width: 230px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: white;
     background-image: url(../img/searchicon.png);
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 12px 3px 8px 40px;
     border-radius: 25px;
+}
+
+.section__legend {
+    padding: 10px;
+    text-align: left;
+}
+
+.section__headerFilter {
+    margin: 10px;
+}
+
+.section__filter--without, .section__filter--upTo {
+    border: none;
+}
+
+.section__list--without, .section__list--upTo {
+    padding: 0;
+    text-align: center;
+}
+
+.section__filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section__listItem {
+    list-style: none;
+    margin: 5px;
+    text-align: justify;
+    padding: 0 25%;
+    font-size: 1.1em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.section__headerFieldset {
+    margin: 0;
+}
+
+.section__button {
+    width: 80%;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #00000067;
+    border: none;
+    color: white;
+    border-radius: 25px;
+}
+
+.section__button:hover {
+    background-color: #000000b9;
 }
