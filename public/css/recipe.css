@@ -102,6 +102,7 @@ input[type="radio"], input[type="checkbox"] {
 
 .section__button:hover {
     background-color: #000000b9;
+    cursor: pointer;
 }
 
 .section__recipes {

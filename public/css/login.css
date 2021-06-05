@@ -82,3 +82,44 @@ strong {
 .section__image {
     width: 70%;
 }
+
+@media (max-width: 767px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .section__image {
+        width: 100%;
+    }
+    .section__text {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .section__loginForm {
+        padding: 15px;
+    }
+    .section__form {
+        width: 100%;
+    }
+    .section__input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid white;
+        margin: 15px;
+        padding: 5px;
+        font-size: 16px;
+        color: white;
+    }
+    .section__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .section__button {
+        margin: 5px;
+        font-size: 14px;
+    }
+}
