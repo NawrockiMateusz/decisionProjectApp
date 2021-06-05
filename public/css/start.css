@@ -33,3 +33,7 @@ main {
     cursor: pointer;
     background: #0000006c;
 }
+
+.hamburgerContainer {
+    display: none;
+}
