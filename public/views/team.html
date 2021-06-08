@@ -10,11 +10,37 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/hamburgerMenu.css">
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
     <nav class="nav">
         <a href="../views/start.html"><img src="../img/logo.svg" alt="logo" class="nav__img"></a>
+        <div class="hamburgerContainer">
+            <button class="hamburger">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+            <div class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="../views/start.html">HOME</a></li>
+                    <li class="navigation__item"><a href="../views/welcome.html">ABOUT US</a></li>
+                    <li class="navigation__item"><a href="../views/recipe.html">RECIPE</a></li>
+                    <li class="navigation__item"><a href="../views/team.html">TEAM</a></li>
+                    <li class=" navigation__item"><a href="../views/contant.html">CONTACT</a></li>
+                    <li class="navigation__item"><a href="https://www.facebook.com/" target="_blank"
+                            class="iconLink"><img src="../img/nav icon/fb.svg" alt="facebook icon" class="icon"></a>
+                    </li>
+                    <li class="navigation__item"><a href="https://www.instagram.com/" target="_blank"><img
+                                src="../img/nav icon/ig.svg" alt="instagram icon" class="icon"></a></li>
+                    <li class="navigation__item"><a href="#"><img src="../img/nav icon/options.svg" alt="options icon"
+                                class="icon"></a></li>
+
+                </ul>
+            </div>
+        </div>
         <ul class="list">
             <li class="listItem"><a href="../views/start.html" class="listLink">Home</a></li>
             <li class="listItem"><a href="../views/welcome.html" class="listLink">About Us</a></li>
