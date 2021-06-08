@@ -19,3 +19,19 @@
 .section__image {
     max-width: 100%;
 }
+
+@media (max-width: 767px) {
+    .section {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .section__paragraph {
+        max-width: 100%;
+        padding: 15px;
+        margin-top: 50px;
+        font-size: 1.4em;
+    }
+    .section__imageContainer {
+        max-width: 90%;
+    }
+}
