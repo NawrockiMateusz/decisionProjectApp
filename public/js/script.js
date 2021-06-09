@@ -7,3 +7,11 @@ const handleClick = () => {
     nav.classList.toggle('navigation--active');
 }
 hamburger.addEventListener('click', handleClick);
+
+const makeDecision = document.querySelector(".js-makeDecision");
+
+makeDecision.addEventListener("click", (event) => {
+    event.preventDefault();
+    location.replace("welcome.html");
+})
+
