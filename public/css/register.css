@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    color: white;
+    font-family: Rockwell Nova, 'Times New Roman', Times, serif;
+}
+
+.main {
+    background-image: url(../img/jump.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.section__buttons {
+    display: flex;
+}
+
+.main__div {
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.section__form {
+    background-color: #FFFFFF2E;
+    max-width: 800px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.section__login {
+    width: 100%;
+}
+
+.section__logoImg {
+    width: 60%;
+}
+
+.section__text {
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+.section__input {
+    background: none;
+    border: none;
+    border-bottom: 4px solid white;
+    margin: 25px;
+    padding: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.section__input::placeholder {
+    color: white;
+}
+
+.sections__buttons {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__button {
+    background-color: #000000AB;
+    font-size: 18px;
+    border: none;
+    color: white;
+    border-radius: 35px;
+    padding: 15px 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.section__image {
+    width: 70%;
+}
+
+@media (max-width: 767px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .section__image {
+        width: 100%;
+    }
+    .section__text {
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .section__loginForm {
+        padding: 15px;
+    }
+    .section__form {
+        width: 100%;
+    }
+    .section__input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid white;
+        margin: 15px;
+        padding: 5px;
+        font-size: 16px;
+        color: white;
+    }
+    .section__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .section__button {
+        margin: 5px;
+        font-size: 14px;
+    }
+}
