@@ -44,12 +44,48 @@
 }
 
 .nextButton {
+    display: flex;
     width: 36px;
     color: #707070;
     border-radius: 100%;
     text-align: center;
+    align-self: center;
 }
 
 .rotate {
     transform: rotate(180deg);
+}
+
+.hamburgerContainer {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .image__container {
+        display: none;
+    }
+    .image__containerForMobile {
+        display: block;
+        margin: 0;
+    }
+    .section__teamHeader {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 10%;
+    }
+    .section__team {
+        margin: 0;
+        margin-top: 40%;
+    }
+    .images__container {
+        margin-top: 20px;
+    }
+    .imageTeam {
+        width: 100%;
+    }
+    .button__imageNext {
+        padding: 20px;
+    }
 }
