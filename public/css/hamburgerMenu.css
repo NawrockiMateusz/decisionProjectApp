@@ -26,6 +26,9 @@
     }
     .hamburger, .navigation {
         transition: transform .3s .1s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .hamburger__box {
         width: 35px;

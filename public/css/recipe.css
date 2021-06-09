@@ -36,6 +36,10 @@
     z-index: -1;
 }
 
+.section__filterMobile {
+    display: none;
+}
+
 .section__searchBar {
     max-width: 230px;
     box-sizing: border-box;
@@ -125,4 +129,86 @@ input[type="radio"], input[type="checkbox"] {
 
 .section__recipeName {
     text-align: center;
+}
+
+.hamburgerContainer {
+    display: none;
+}
+
+.buttonMobileSection {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .hamburgerContainer {
+        display: block;
+    }
+    .buttonMobileSection {
+        display: block;
+    }
+    .section {
+        flex-direction: column;
+    }
+    .section__filter {
+        display: none;
+    }
+    .section__recipes {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+    .section__recipe {
+        align-self: center;
+        max-width: 100%;
+        margin: 10px;
+    }
+    .buttonsSection {
+        display: flex;
+        max-height: 100px;
+        margin-top: 125px;
+        justify-content: space-around;
+    }
+    .recipeButton {
+        background: none;
+        border: 1px solid #707070;
+        border-radius: 25px;
+        padding: 10px 35px;
+    }
+    .section__filterMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.857);
+        color: white;
+        transform: translateX(100%);
+        transition: 1s;
+        height: 100vh;
+        width: 100%;
+        padding: 10px;
+        padding: 0;
+        text-align: center;
+        z-index: 1;
+    }
+    .visibleSection {
+        transform: translateX(0%);
+    }
+    .section__list--without {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .section__listItem {
+        padding: 0;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .section__button {
+        border: 1px solid #707070;
+    }
+    .section__headerFieldset {
+        margin: 10px;
+    }
 }
