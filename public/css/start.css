@@ -38,25 +38,11 @@ main {
     display: none;
 }
 
-.logOutInvisible {
-    position: fixed;
-    right: 0;
-    top: 125px;
-    transform: translateX(100%);
-    transition: 0.5s;
-}
-
-.logOutVisible {
-    transform: translateX(0%);
-}
-
 .iconContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 
 @media (max-width: 767px) {
     .button {

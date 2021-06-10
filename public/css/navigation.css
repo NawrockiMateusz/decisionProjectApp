@@ -11,6 +11,7 @@
     align-items: center;
     font: normal normal normal 22px/29px Rockwell Nova;
     z-index: 1;
+    flex-wrap: nowrap;
 }
 
 .nav__img {
@@ -39,8 +40,13 @@
     border-bottom: 1px solid white;
 }
 
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+
 .icon {
-    margin: 5px;
+    margin: 10px;
     transition: 0.5s;
 }
 
