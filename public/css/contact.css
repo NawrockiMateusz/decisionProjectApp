@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+}
+
+main {
+    background-image: url(../img/tablet-1075790_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    font: normal normal normal 22px/29px Rockwell Nova;
+}
+
+.hamburgerContainer {
+    display: none;
+}
+
+.logOutInvisible {
+    position: fixed;
+    right: 0;
+    top: 125px;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+.logOutVisible {
+    transform: translateX(0%);
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logOutButton {
+    background: black;
+    color: white;
+    font-size: 1em;
+    padding: 10px 25px;
+}
+
+.logOutButton:hover {
+    cursor: pointer;
+}
+
+.contactSection {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffffc9;
+    max-width: 800px;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.mail {
+    width: 30%;
+}
+
+.linkContant {
+    text-decoration: none;
+    color: black;
+}
+
+.linkContant:hover {
+    color: red;
+}
+
+@media (max-width: 767px) {
+    .button {
+        padding: 25px 35px;
+        font-size: 1em;
+    }
+    .contactSection {
+        max-width: 80%;
+        height: 60%;
+        flex-direction: column;
+    }
+}
