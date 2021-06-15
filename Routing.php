@@ -1,5 +1,7 @@
 <?php
 
+require_once 'src/controllers/DefaultController.php';
+
 class Routing
 {
     public static $routes;
