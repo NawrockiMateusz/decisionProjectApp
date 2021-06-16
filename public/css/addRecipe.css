@@ -1,0 +1,42 @@
+.addRecipe {
+    background-color: rgba(0, 0, 0, 0.378);
+    width: 60%;
+    height: 60%;
+    border-radius: 50px;
+    margin: 15% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputName, .inputDescription, .addPhoto {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.inputDescription {
+    resize: both;
+}
+
+.addPhoto {
+    align-self: center;
+}
+
+p {
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .inputName, .inputDescription, .addPhoto {
+        max-width: 250px;
+        width: 100%;
+        text-align: center;
+    }
+    .addRecipe {
+        width: 90%;
+        height: 90%;
+        margin: 5% auto;
+    }
+}
