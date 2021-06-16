@@ -60,7 +60,7 @@
         <div class="section__filter">
             <h2 class="section__headerFilter">- Recipes -</h2>
             <form class="section__serach">
-                <input type="text" name="search" placeholder="Searchpublic" class="section__searchBar">
+                <input type="text" name="search" placeholder="Search..." class="section__searchBar">
             </form>
 
             <fieldset class="section__filter--without">
