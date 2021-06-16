@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/recipe.css">
-    <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/hamburgerMenu.css">
-    <link rel="stylesheet" href="../css/showRecipe.css">
-    <script src="../js/script.js" defer></script>
-    <script src="../js/recipe.js" defer></script>
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/recipe.css">
+    <link rel="stylesheet" href="public/css/navigation.css">
+    <link rel="stylesheet" href="public/css/hamburgerMenu.css">
+    <link rel="stylesheet" href="public/css/showRecipe.css">
+    <script src="public/js/script.js" defer></script>
+    <script src="public/js/recipe.js" defer></script>
 </head>
 
 <body>
     <nav class="nav">
-        <a href="../views/start.php"><img src="../img/logo.svg" alt="logo" class="nav__img"></a>
+        <a href="public/views/start.php"><img src="public/img/logo.svg" alt="logo" class="nav__img"></a>
         <div class="hamburgerContainer">
             <button class="hamburger">
                 <span class="hamburger__box">
@@ -33,10 +33,10 @@
                     <li class="navigation__item"><a href="team.php">TEAM</a></li>
                     <li class=" navigation__item"><a href="contact.php">CONTACT</a></li>
                     <li class="navigation__item"><a href="https://www.facebook.com/" target="_blank"
-                            class="iconLink"><img src="../img/nav icon/fb.svg" alt="facebook icon" class="icon"></a>
+                            class="iconLink"><img src="public/img/nav icon/fb.svg" alt="facebook icon" class="icon"></a>
                     </li>
                     <li class="navigation__item"><a href="https://www.instagram.com/" target="_blank"><img
-                                src="../img/nav icon/ig.svg" alt="instagram icon" class="icon"></a></li>
+                                src="public/img/nav icon/ig.svg" alt="instagram icon" class="icon"></a></li>
                     <li class="navigation__item"><a href="login.php">Log Out</a></li>
 
                 </ul>
@@ -50,9 +50,9 @@
             <li class="listItem"><a href="contact.php" class="listLink">Contact</a></li>
         </ul>
         <section class="iconContainer">
-            <a href="https://www.facebook.com/" target="_blank" class="iconLink"><img src="../img/nav icon/fb.svg"
+            <a href="https://www.facebook.com/" target="_blank" class="iconLink"><img src="public/img/nav icon/fb.svg"
                     alt="facebook icon" class="icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../img/nav icon/ig.svg" alt="instagram icon"
+            <a href="https://www.instagram.com/" target="_blank"><img src="public/img/nav icon/ig.svg" alt="instagram icon"
                     class="icon"></a>
             <li class="navigation__item"><a href="login.php" class="logOutLink">Log Out</a></li>
         </section>
@@ -61,7 +61,7 @@
         <div class="section__filter">
             <h2 class="section__headerFilter">- Recipes -</h2>
             <form class="section__serach">
-                <input type="text" name="search" placeholder="Search.." class="section__searchBar">
+                <input type="text" name="search" placeholder="Searchpublic" class="section__searchBar">
             </form>
 
             <fieldset class="section__filter--without">
@@ -153,7 +153,7 @@
         <div class="section__filterMobile">
             <h2 class="section__headerFilter">- Recipes -</h2>
             <form class="section__serach">
-                <input type="text" name="search" placeholder="Search.." class="section__searchBar">
+                <input type="text" name="search" placeholder="Search..." class="section__searchBar">
             </form>
 
             <fieldset class="section__filter--without">

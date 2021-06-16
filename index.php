@@ -9,5 +9,6 @@ Routing::get('', 'DefaultController');
 Routing::get('index', 'DefaultController');
 Routing::get('start', 'DefaultController');
 Routing::post('login', 'SecurityController');
+Routing::post('addRecipe', 'RecipeController');
 
 Routing::run($path);

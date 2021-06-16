@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decision - login</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/register.css">
-    <script src="../js/fromRegisterPage.js" defer></script>
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="public/css/register.css">
+    <script src="public/js/fromRegisterPage.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         <div class="main__div">
             <section class="section">
                 <div class="section__logoImg">
-                    <img src="../img/logo.svg" alt="logo" class="section__image">
+                    <img src="public/img/logo.svg" alt="logo" class="section__image">
                 </div>
                 <div class="section__login">
                     <div class="section__loginForm">
