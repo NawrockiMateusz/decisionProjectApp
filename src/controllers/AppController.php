@@ -10,6 +10,10 @@ class AppController
         $this->request = $_SERVER['REQUEST_METHOD'];
     }
 
+    protected function isGet(): bool{
+        return $this->request === 'GET';
+    }
+
     protected function isPost(): bool{
         return $this->request === 'POST';
     }
