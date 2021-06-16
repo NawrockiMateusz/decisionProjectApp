@@ -238,9 +238,9 @@
                     class="section__recipeImage">
                 <p class="section__recipeName">Scrambled Eggs</p>
             </div>
-            <div class="section__recipe"><img src="public/img/scrambledEggs.jpg" alt="scrambled eggs"
+            <div class="section__recipe"><img src="public/uploads/<?= $recipe->getImage() ?>" alt="scrambled eggs"
                     class="section__recipeImage">
-                <p class="section__recipeName">Scrambled Eggs</p>
+                <p class="section__recipeName"><?= $recipe->getTitle() ?></p>
             </div>
             <div class="section__recipe"><img src="public/img/scrambledEggs.jpg" alt="scrambled eggs"
                     class="section__recipeImage">

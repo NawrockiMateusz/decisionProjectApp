@@ -245,18 +245,18 @@
                 ?>
                 <p>
                     <label>
-                        <input type="text" name="nameRecipe" placeholder="Name" required class="inputName">
+                        <input type="text" name="title" placeholder="Name" required class="inputName">
                     </label>
                 </p>
                 <p>
                     <label>
-                        <textarea name="descriptionName" id="" cols="30" rows="10" required
+                        <textarea name="description" id="" cols="30" rows="10" required
                             placeholder="How to prepare:" class="inputDescription"></textarea>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input type="file" name="photoRecipe" required value="Add photo" class="addPhoto">
+                        <input type="file" name="file" required value="Add photo" class="addPhoto">
                     </label>
                 </p>
                 <p>
