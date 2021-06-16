@@ -3,11 +3,11 @@ const logInPassedButton = document.querySelector(".js-logIn-passed");
 
 signUpButton.addEventListener("click", (event) => {
     event.preventDefault();
-    location.replace("register.html");
+    location.replace("register.php");
 })
 
 logInPassedButton.addEventListener("click", (event) => {
     event.preventDefault();
-    location.replace("start.html");
+    location.replace("start.php");
 })
 

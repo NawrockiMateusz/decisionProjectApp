@@ -14,7 +14,7 @@ const makeDecision = document.querySelector(".js-makeDecision");
 
 makeDecision.addEventListener("click", (event) => {
     event.preventDefault();
-    location.replace("welcome.html");
+    location.replace("welcome.php");
 })
 
 console.log(logOut);

@@ -7,13 +7,20 @@ class DefaultController extends AppController
 
     public function index()
     {
-        //TODO display login.html
+        //TODO display login.php
         $this->render('login');
     }
 
+    public function login()
+    {
+        //TODO display login.php
+        $this->render('login');
+    }
+
+
     public function start()
     {
-        //TODO display start.html
+        //TODO display start.php
         $this->render('start');
     }
 }
