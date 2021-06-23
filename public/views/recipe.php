@@ -233,24 +233,14 @@
             </div>
         </div>
 
-        <div class="section__recipes">
 
-            <div class="section__recipe"><img src="public/img/scrambledEggs.jpg" alt="scrambled eggs"
-                    class="section__recipeImage">
-                <p class="section__recipeName">Scrambled Eggs</p>
-            </div>
-            <div class="section__recipe"><img src="public/uploads/<?= $recipe->getImage() ?>" alt="scrambled eggs"
-                    class="section__recipeImage">
-                <p class="section__recipeName"><?= $recipe->getTitle() ?></p>
-            </div>
-            <div class="section__recipe"><img src="public/img/scrambledEggs.jpg" alt="scrambled eggs"
-                    class="section__recipeImage">
-                <p class="section__recipeName">Scrambled Eggs</p>
-            </div>
-            <div class="section__recipe"><img src="public/img/scrambledEggs.jpg" alt="scrambled eggs"
-                    class="section__recipeImage">
-                <p class="section__recipeName">Scrambled Eggs</p>
-            </div>
+        <div class="section__recipes">
+            <?php foreach ($recipe as $recipes): ?>
+                <div class="section__recipe"><img src="public/uploads/<?= $recipes-> getImage(); ?>" alt="scrambled eggs"
+                                                  class="section__recipeImage">
+                    <p class="section__recipeName"><?= $recipes-> getTitle(); ?></p>
+                </div>
+            <?php endforeach; ?>
         </div>
     </section>
 </body>

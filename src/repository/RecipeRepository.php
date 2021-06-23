@@ -44,6 +44,7 @@ class RecipeRepository extends Repository
             $recipe->getImage()
         ]);
     }
+
     public function getRecipes(): array
     {
         $result = [];
@@ -56,13 +57,12 @@ class RecipeRepository extends Repository
         $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($recipes as $recipe){
-            $result = new Recipe(
+            $result[] = new Recipe(
                 $recipe['title'],
                 $recipe['description'],
-                $recipe['image']
+                $recipe['image'],
             );
         }
-
         return $result;
     }
 }

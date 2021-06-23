@@ -21,14 +21,13 @@ class RecipeController extends AppController
 
     public function recipe()
     {
-        $recipes = $this->recipeRepository->getRecipe();
-        $this->render('recipe', ['recipes' => $recipes]);
+        $recipes = $this->recipeRepository->getRecipes();
+        $this->render('recipe', ['recipe' => $recipes]);
     }
 
     public function addRecipe()
     {
         if($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file'])) {
-
             move_uploaded_file(
                 $_FILES['file']['tmp_name'],
                dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
@@ -37,11 +36,19 @@ class RecipeController extends AppController
             $recipe = new Recipe($_POST['title'],$_POST['description'], $_FILES['file']['name']);
             $this->recipeRepository->addRecipe($recipe);
 
-            return $this->render('recipe', ['messages' => $this->messages, 'recipe' => $recipe]);
+            $url = "http://$_SERVER[HTTP_HOST]";
+            return header("Location: {$url}/recipe");
         }
 
-        $this->render('addRecipe', ['messages' => $this->messages]);
+        $this->render('AddRecipe', ['messages' => $this->messages]);
     }
+
+
+
+
+
+
+
 
     private function validate(array $file): bool
     {
