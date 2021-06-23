@@ -24,5 +24,29 @@ class DefaultController extends AppController
         $this->render('start');
     }
 
+    public function register()
+    {
+        //TODO display start.php
+        $this->render('register');
+    }
+
+    public function team()
+    {
+        //TODO display start.php
+        $this->render('team');
+    }
+
+    public function welcome()
+    {
+        //TODO display start.php
+        $this->render('welcome');
+    }
+
+    public function contact()
+    {
+        //TODO display start.php
+        $this->render('contact');
+    }
+
 
 }

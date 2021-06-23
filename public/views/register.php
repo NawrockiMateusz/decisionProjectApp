@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decision - login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="public/css/base.css">
     <link rel="stylesheet" href="public/css/normalize.css">
     <link rel="stylesheet" href="public/css/register.css">
-    <script src="public/js/fromRegisterPage.js" defer></script>
+
+    <script type="text/javascript" src="./public/js/register.js" defer></script>
+
 </head>
 
 <body>
@@ -21,22 +24,28 @@
                 </div>
                 <div class="section__login">
                     <div class="section__loginForm">
-                        <form action="#" class="section__form">
+                        <form action="register" class="section__form" method="POST">
+                            <?php
+                            if(isset($messages)){
+                                foreach($messages as $message) {
+                                    echo $message;
+                                }
+                            }
+                            ?>
                             <label>
-                                <input type="text" class="section__input" placeholder="User name">
+                                <input type="text" class="section__input" placeholder="User name" name="username">
                             </label>
                             <label>
-                                <input type="email" class="section__input" placeholder="Email">
+                                <input type="email" class="section__input" placeholder="Email" name="email">
                             </label>
                             <label>
-                                <input type="password" class="section__input" placeholder="Password">
+                                <input type="password" class="section__input" placeholder="Password" name="password">
                             </label>
                             <label>
-                                <input type="password" class="section__input" placeholder="Repeat password">
+                                <input type="password" class="section__input" placeholder="Confirm password" name="confirmedPassword">
                             </label>
                             <div class="section__buttons">
-                                <button class="section__button js-logIn">Log in</button>
-                                <button class="section__button">Sign up</button>
+                                <button class="section__button" onclick="register()" ">Sign up</button>
                             </div>
                     </div>
                     </form>

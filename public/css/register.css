@@ -47,6 +47,8 @@ html, body {
     width: 60%;
 }
 
+
+
 .section__text {
     margin-bottom: 50px;
     font-size: 28px;
@@ -92,6 +94,13 @@ strong {
     width: 70%;
 }
 
+.no-valid{
+    border: 3px solid red;
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 0.2em red;
+}
+
 @media (max-width: 767px) {
     .section {
         display: flex;
@@ -132,3 +141,4 @@ strong {
         font-size: 14px;
     }
 }
+

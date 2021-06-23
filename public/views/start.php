@@ -26,11 +26,11 @@
                 </button>
                 <div class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="public/views/start.php">HOME</a></li>
-                        <li class="navigation__item"><a href="public/views/welcome.php">ABOUT US</a></li>
-                        <li class="navigation__item"><a href="public/views/recipe.php">RECIPE</a></li>
-                        <li class="navigation__item"><a href="public/views/team.php">TEAM</a></li>
-                        <li class=" navigation__item"><a href="public/views/contact.php">CONTACT</a></li>
+                        <li class="navigation__item"><a href="start>HOME</a></li>
+                        <li class="navigation__item"><a href="welcome">ABOUT US</a></li>
+                        <li class="navigation__item"><a href="recipe">RECIPE</a></li>
+                        <li class="navigation__item"><a href="team">TEAM</a></li>
+                        <li class=" navigation__item"><a href="contact">CONTACT</a></li>
                         <li class="navigation__item"><a href="https://www.facebook.com/" target="_blank"
                                 class="iconLink"><img src="public/img/nav icon/fb.svg" alt="facebook icon"
                                     class="icon"></a>
@@ -43,11 +43,11 @@
                 </div>
             </div>
             <ul class="list">
-                <li class="listItem"><a href="public/views/start.php" class="listLink">Home</a></li>
-                <li class="listItem"><a href="public/views/welcome.php" class="listLink">About Us</a></li>
-                <li class="listItem"><a href="public/views/recipe.php" class="listLink">Recipe</a></li>
-                <li class="listItem"><a href="public/views/team.php" class="listLink">Team</a></li>
-                <li class="listItem"><a href="public/views/contact.php" class="listLink">Contact</a></li>
+                <li class="listItem"><a href="start" class="listLink">Home</a></li>
+                <li class="listItem"><a href="welcome" class="listLink">About Us</a></li>
+                <li class="listItem"><a href="recipe" class="listLink">Recipe</a></li>
+                <li class="listItem"><a href="team" class="listLink">Team</a></li>
+                <li class="listItem"><a href="contact" class="listLink">Contact</a></li>
             </ul>
             <section class="iconContainer">
                 <a href="https://www.facebook.com/" target="_blank" class="iconLink"><img

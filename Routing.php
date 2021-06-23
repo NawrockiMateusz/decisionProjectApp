@@ -20,10 +20,23 @@ class Routing {
     }
 
     public static function run ($url) {
+
+        $sessionControll = new SessionController();
+
+        if($url==='register'){
+            $url = 'register';
+        } else if (!$sessionControll->checkCookieWithDatabase()) {
+            $url = 'login';
+        }
+        else if ($url==='login') {
+            $url = 'welcome';
+        }
+
         $action = explode("/", $url)[0];
         if (!array_key_exists($action, self::$routes)) {
             die("Wrong url!");
         }
+
 
         $controller = self::$routes[$action];
         $object = new $controller;

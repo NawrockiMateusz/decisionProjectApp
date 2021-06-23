@@ -53,7 +53,7 @@
                         alt="facebook icon" class="icon"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="public/img/nav icon/ig.svg"
                         alt="instagram icon" class="icon"></a>
-                <li class="navigation__item"><a href="login.php" class="logOutLink">Log Out</a></li>
+                <li class="navigation__item"><form class="logOutLink" action="logOut" method="POST"><button type="submit" class="logOutLink">LogOut</button></form></li>
             </section>
         </nav>
     </header>

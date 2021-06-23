@@ -29,13 +29,30 @@ class RecipeRepository extends Repository
 
     public function addRecipe(Recipe $recipe): void
     {
+        $database = new Database();
+
+        $stmt = $database->connect()->prepare('
+            SELECT id FROM users WHERE email= :email
+        ');
+
+        $stmt->bindParam(':email', json_decode($_COOKIE["user"], true) ['email'], PDO::PARAM_STR);
+
+        $stmt -> execute();
+
+        $tmp = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        $userID = $tmp['id'];
+
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
             INSERT INTO recipes (title, description, created_at, id_assigned_by, image)
             VALUES (?, ?, ?, ?, ?)
         ');
 
-        $assignedById = 1;
+
+
+        $assignedById = $userID;
+
         $stmt->execute([
             $recipe->getTitle(),
             $recipe->getDescription(),

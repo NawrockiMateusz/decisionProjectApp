@@ -4,10 +4,12 @@ require_once 'AppController.php';
 require_once __DIR__ .'/../models/User.php';
 require_once __DIR__.'/../repository/UserRepository.php';
 
+
 class SecurityController extends AppController
 {
     public function login()
     {
+        $sessionControll = new SessionController();
         $userRepository = new UserRepository();
 
         if(!$this->isPost()){
@@ -15,7 +17,7 @@ class SecurityController extends AppController
         }
 
         $email = $_POST["email"];
-        $password = $_POST["password"];
+        $password = md5($_POST["password"]);
 
         $user = $userRepository->getUser($email);
 
@@ -31,10 +33,20 @@ class SecurityController extends AppController
             return $this->render('login', ['messages' => ['Wrong password']]);
         }
 
-//        return $this->render('start');
+        $sessionControll->setCookie($user->getEmail());
+
 
         $url = "http://$_SERVER[HTTP_HOST]";
-        header("Location: {$url}/start");
+        header("Location: {$url}/welcome");
 
+
+    }
+
+    public function logOut(){
+        $sessionControll = new SessionController();
+        $sessionControll->deleteCoockieInDatabase();
+
+        $url = "http://$_SERVER[HTTP_HOST]";
+        header("Location: {$url}/login");
     }
 }
