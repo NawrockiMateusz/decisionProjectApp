@@ -47,8 +47,10 @@
                             <div class="section__buttons">
                                 <button class="section__button" onclick="register()" ">Sign up</button>
                             </div>
+
                     </div>
                     </form>
+                    <a href="login"><button class="section__button">Back to login</button></a>
                 </div>
         </div>
         </section>

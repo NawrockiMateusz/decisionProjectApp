@@ -17,6 +17,12 @@ html, body {
     display: flex;
 }
 
+.section__login{
+    background-color: #FFFFFF2E;
+    border-radius: 45px;
+    padding-bottom: 10px;
+}
+
 .main__div {
     background-color: rgba(0, 0, 0, 0.541);
     height: 100%;
@@ -30,9 +36,7 @@ html, body {
 }
 
 .section__form {
-    background-color: #FFFFFF2E;
     max-width: 800px;
-    border-radius: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +56,10 @@ html, body {
 .section__text {
     margin-bottom: 50px;
     font-size: 28px;
+}
+
+a{
+    margin-left: 35%;
 }
 
 strong {
@@ -102,6 +110,7 @@ strong {
 }
 
 
+
 @media (max-width: 767px) {
     .section {
         display: flex;
@@ -119,7 +128,7 @@ strong {
         font-size: 18px;
     }
     .section__loginForm {
-        padding: 15px;
+        padding: 2px;
     }
     .section__form {
         width: 100%;
@@ -140,6 +149,10 @@ strong {
     .section__button {
         margin: 5px;
         font-size: 14px;
+        padding: 15px 20px;
+    }
+    a{
+        margin-left: 0;
     }
 }
 

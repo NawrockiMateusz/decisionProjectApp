@@ -18,4 +18,6 @@ class newUserRepository
         $stmt->execute();
 
     }
+
+
 }

@@ -8,3 +8,5 @@ $password=$_POST['password'];
 
 
 newUserRepository::register($username,$email,$password);
+
+

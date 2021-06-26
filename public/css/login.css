@@ -17,6 +17,7 @@ html, body {
 .registerButton{
     margin-left: 35%;
 
+
 }
 
 .main__div {
@@ -24,15 +25,20 @@ html, body {
     height: 100%;
     display: flex;
     justify-content: center;
+
 }
 
+.section__loginForm{
+    background-color: #FFFFFF2E;
+    border-radius: 45px;
+    padding-bottom: 10px;
+}
 .section {
     display: flex;
     align-items: center;
 }
 
 .section__form {
-    background-color: #FFFFFF2E;
     max-width: 800px;
     border-radius: 45px;
     display: flex;
@@ -127,5 +133,10 @@ strong {
     .section__button {
         margin: 5px;
         font-size: 14px;
+    }
+
+    .registerButton{
+        margin-left: 2%;
+
     }
 }
