@@ -3,6 +3,7 @@
 require_once 'src/controllers/DefaultController.php';
 require_once 'src/controllers/SecurityController.php';
 require_once 'src/controllers/RecipeController.php';
+require_once 'src/controllers/PermController.php';
 
 
 class Routing {
@@ -21,6 +22,8 @@ class Routing {
 
     public static function run ($url) {
 
+        $permController = new permController();
+
         $sessionControll = new SessionController();
 
         if($url==='register'){
@@ -30,6 +33,12 @@ class Routing {
         }
         else if ($url==='login') {
             $url = 'start';
+        }
+
+        if($url === 'addRecipe' and $permController->isAdmin()!==2){
+            $url="recipe";
+        } else if ($url === 'addRecipe' and $permController->isAdmin()===2){
+            $url="addRecipe";
         }
 
         $action = explode("/", $url)[0];
@@ -44,4 +53,6 @@ class Routing {
 
         $object->$action();
     }
+
+
 }
