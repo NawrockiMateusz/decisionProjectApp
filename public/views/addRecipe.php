@@ -140,7 +140,7 @@
                 </ul>
                 <div class="section__buttonsContainer">
                     <button class="section__button">Filter</button>
-                    <button class="section__button">Add recipe</button>
+
                 </div>
             </fieldset>
 
@@ -149,7 +149,6 @@
 
         <section class="buttonsSection buttonMobileSection">
             <button class="recipeButton recipeButton--Filter">Filter</button>
-            <button class="recipeButton">Add recipe</button>
         </section>
         <div class="section__filterMobile">
             <h2 class="section__headerFilter">- Recipes -</h2>

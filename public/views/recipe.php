@@ -140,7 +140,6 @@
             </fieldset>
             <div class="section__buttonsContainer">
                 <button class="section__button">Filter</button>
-                <button class="section__button">Add recipe</button>
             </div>
         </div>
 
