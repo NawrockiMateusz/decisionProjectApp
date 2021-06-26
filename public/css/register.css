@@ -101,6 +101,7 @@ strong {
     box-shadow: 0 0 0.2em red;
 }
 
+
 @media (max-width: 767px) {
     .section {
         display: flex;

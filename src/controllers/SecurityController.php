@@ -37,7 +37,7 @@ class SecurityController extends AppController
 
 
         $url = "http://$_SERVER[HTTP_HOST]";
-        header("Location: {$url}/welcome");
+        header("Location: {$url}/start");
 
 
     }

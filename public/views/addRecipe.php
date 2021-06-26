@@ -17,46 +17,47 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <a href="public/views/start.php"><img src="public/img/logo.svg" alt="logo" class="nav__img"></a>
-        <div class="hamburgerContainer">
-            <button class="hamburger">
-                <span class="hamburger__box">
-                    <span class="hamburger__inner"></span>
-                </span>
-            </button>
-            <div class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="start.php">HOME</a></li>
-                    <li class="navigation__item"><a href="welcome.php">ABOUT US</a></li>
-                    <li class="navigation__item"><a href="recipe.php">RECIPE</a></li>
-                    <li class="navigation__item"><a href="team.php">TEAM</a></li>
-                    <li class=" navigation__item"><a href="contact.php">CONTACT</a></li>
-                    <li class="navigation__item"><a href="https://www.facebook.com/" target="_blank"
-                            class="iconLink"><img src="public/img/nav icon/fb.svg" alt="facebook icon" class="icon"></a>
-                    </li>
-                    <li class="navigation__item"><a href="https://www.instagram.com/" target="_blank"><img
+<nav class="nav">
+    <a href="public/views/start.html"><img src="public/img/logo.svg" alt="logo" class="nav__img"></a>
+    <div class="hamburgerContainer">
+        <button class="hamburger">
+                    <span class="hamburger__box">
+                        <span class="hamburger__inner"></span>
+                    </span>
+        </button>
+        <div class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="start>HOME</a></li>
+                        <li class="navigation__item"><a href="welcome">ABOUT US</a></li>
+                <li class="navigation__item"><a href="recipe">RECIPE</a></li>
+                <li class="navigation__item"><a href="team">TEAM</a></li>
+                <li class=" navigation__item"><a href="contact">CONTACT</a></li>
+                <li class="navigation__item"><a href="https://www.facebook.com/" target="_blank"
+                                                class="iconLink"><img src="public/img/nav icon/fb.svg" alt="facebook icon"
+                                                                      class="icon"></a>
+                </li>
+                <li class="navigation__item"><a href="https://www.instagram.com/" target="_blank"><img
                                 src="public/img/nav icon/ig.svg" alt="instagram icon" class="icon"></a></li>
-                    <li class="navigation__item"><a href="login.php">Log Out</a></li>
+                <li class="navigation__item"><a href="login">Log Out</a></li>
 
-                </ul>
-            </div>
+            </ul>
         </div>
-        <ul class="list">
-            <li class="listItem"><a href="start.php" class="listLink">Home</a></li>
-            <li class="listItem"><a href="welcome.php" class="listLink">About Us</a></li>
-            <li class="listItem"><a href="recipe.php" class="listLink">Recipe</a></li>
-            <li class="listItem"><a href="team.php" class="listLink">Team</a></li>
-            <li class="listItem"><a href="contact.php" class="listLink">Contact</a></li>
-        </ul>
-        <section class="iconContainer">
-            <a href="https://www.facebook.com/" target="_blank" class="iconLink"><img src="public/img/nav icon/fb.svg"
-                    alt="facebook icon" class="icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="public/img/nav icon/ig.svg" alt="instagram icon"
-                    class="icon"></a>
-            <li class="navigation__item"><a href="login.php" class="logOutLink">Log Out</a></li>
-        </section>
-    </nav>
+    </div>
+    <ul class="list">
+        <li class="listItem"><a href="start" class="listLink">Home</a></li>
+        <li class="listItem"><a href="welcome" class="listLink">About Us</a></li>
+        <li class="listItem"><a href="recipe" class="listLink">Recipe</a></li>
+        <li class="listItem"><a href="team" class="listLink">Team</a></li>
+        <li class="listItem"><a href="contact" class="listLink">Contact</a></li>
+    </ul>
+    <section class="iconContainer">
+        <a href="https://www.facebook.com/" target="_blank" class="iconLink"><img
+                    src="public/img/nav icon/fb.svg" alt="facebook icon" class="icon"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="public/img/nav icon/ig.svg"
+                                                                  alt="instagram icon" class="icon"></a>
+        <li class="navigation__item"><form class="logOutLink" action="logOut" method="POST"><button type="submit" class="logOutLink">LogOut</button></form></li>
+    </section>
+</nav>
     <section class="section">
         <div class="section__filter">
             <h2 class="section__headerFilter">- Recipes -</h2>
@@ -259,6 +260,23 @@
                         <input type="file" name="file" required value="Add photo" class="addPhoto">
                     </label>
                 </p>
+                <p>
+                    <label>
+                        <input type="text" name="kcal" placeholder="kcal" required class="inputName">
+                    </label>
+                </p>
+
+                <p>
+                    <input list="ingredient" placeholder="ingredient" name="ingredient">
+                    <datalist id="ingredient">
+                        <option value="meat">
+                        <option value="lactose">
+                        <option value="sugar">
+                        <option value="salt">
+
+                    </datalist>
+                </p>
+
                 <p>
                     <button class="section__button" type="submit">Confirm</button>
                 </p>

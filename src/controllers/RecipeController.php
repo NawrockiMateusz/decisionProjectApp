@@ -33,7 +33,8 @@ class RecipeController extends AppController
                dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
             );
 
-            $recipe = new Recipe($_POST['title'],$_POST['description'], $_FILES['file']['name']);
+
+            $recipe = new Recipe($_POST['title'],$_POST['description'], $_FILES['file']['name'], $_POST['ingredient'],$_POST['kcal']);
             $this->recipeRepository->addRecipe($recipe);
 
             $url = "http://$_SERVER[HTTP_HOST]";
@@ -42,9 +43,6 @@ class RecipeController extends AppController
 
         $this->render('AddRecipe', ['messages' => $this->messages]);
     }
-
-
-
 
 
 

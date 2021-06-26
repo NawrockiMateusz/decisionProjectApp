@@ -29,6 +29,11 @@
     list-style: none;
 }
 
+.logOutLink{
+    background: none;
+    border: none;
+}
+
 .listLink {
     text-decoration: none;
     color: white;

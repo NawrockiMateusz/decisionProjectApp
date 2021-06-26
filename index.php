@@ -19,4 +19,5 @@ Routing::get('contact', 'DefaultController');
 Routing::get('logOut', 'SecurityController');
 
 
+
 Routing::run($path);

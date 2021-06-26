@@ -114,6 +114,9 @@ input[type="radio"], input[type="checkbox"] {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow-y: auto;
+
+
 }
 
 .section__recipe {
@@ -121,13 +124,18 @@ input[type="radio"], input[type="checkbox"] {
     width: 100%;
     max-height: 25%;
     padding: 25px;
+    margin-bottom: 13%;
 }
 
 .section__recipeImage {
-    width: 100%;
+    max-width: 100%;
 }
 
 .section__recipeName {
+    text-align: center;
+}
+
+.section__recipeDescription {
     text-align: center;
 }
 
@@ -151,6 +159,7 @@ input[type="radio"], input[type="checkbox"] {
     }
     .section__filter {
         display: none;
+        position: fixed;
     }
     .section__recipes {
         flex-direction: column;

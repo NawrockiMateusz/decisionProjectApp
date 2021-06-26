@@ -37,7 +37,7 @@
                         </li>
                         <li class="navigation__item"><a href="https://www.instagram.com/" target="_blank"><img
                                     src="public/img/nav icon/ig.svg" alt="instagram icon" class="icon"></a></li>
-                        <li class="navigation__item"><a href="public/views/login.php">Log Out</a></li>
+                        <li class="navigation__item"><a href="login">Log Out</a></li>
 
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
                         src="public/img/nav icon/fb.svg" alt="facebook icon" class="icon"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="public/img/nav icon/ig.svg"
                         alt="instagram icon" class="icon"></a>
-                <li class="navigation__item"><a href="public/views/login.html" class="logOutLink">Log Out</a></li>
+                <li class="navigation__item"><form class="logOutLink" action="logOut" method="POST"><button type="submit" class="logOutLink">LogOut</button></form></li>
             </section>
         </nav>
         <div class="buttonContainer">

@@ -29,7 +29,7 @@ class Routing {
             $url = 'login';
         }
         else if ($url==='login') {
-            $url = 'welcome';
+            $url = 'start';
         }
 
         $action = explode("/", $url)[0];

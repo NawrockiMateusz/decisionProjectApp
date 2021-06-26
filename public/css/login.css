@@ -13,6 +13,12 @@ html, body {
     overflow-y: hidden;
 }
 
+
+.registerButton{
+    margin-left: 35%;
+
+}
+
 .main__div {
     background-color: rgba(0, 0, 0, 0.541);
     height: 100%;

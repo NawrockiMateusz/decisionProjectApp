@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="public/css/base.css">
     <link rel="stylesheet" href="public/css/normalize.css">
     <link rel="stylesheet" href="public/css/login.css">
-<!--    <script src="public/js/fromLoginPage.js" defer></script>-->
+    <script src="public/js/js.js" defer></script>
+
 </head>
 
 <body>
@@ -38,11 +39,9 @@
                             <label>
                                 <input type="password" class="section__input" placeholder="Password" name="password">
                             </label>
-                            <div class="section__buttons">
                                 <button class="section__button" type="submit">Log in</button>
-                                <button class="section__button js-signUp">Sign up</button>
-                            </div>
                         </form>
+                            <a href="/register" class="registerButton"><button class="section__button" type="submit">Sign up</button></a>
                     </div>
                 </div>
             </section>

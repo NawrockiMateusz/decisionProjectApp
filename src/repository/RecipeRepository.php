@@ -23,7 +23,9 @@ class RecipeRepository extends Repository
         return new Recipe(
             $recipe['title'],
             $recipe['description'],
-            $recipe['image']
+            $recipe['image'],
+            $recipe['ingredient'],
+            $recipe['kcal']
         );
     }
 
@@ -45,8 +47,8 @@ class RecipeRepository extends Repository
 
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO recipes (title, description, created_at, id_assigned_by, image)
-            VALUES (?, ?, ?, ?, ?)
+            INSERT INTO recipes (title, description, created_at, id_assigned_by, image, ingredient, kcal)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
         ');
 
 
@@ -58,7 +60,9 @@ class RecipeRepository extends Repository
             $recipe->getDescription(),
             $date->format('Y-m-d'),
             $assignedById,
-            $recipe->getImage()
+            $recipe->getImage(),
+            $recipe->getIngredient(),
+            $recipe->getKcal()
         ]);
     }
 
@@ -70,14 +74,19 @@ class RecipeRepository extends Repository
             SELECT * FROM recipes
         ');
 
+
+
         $stmt->execute();
         $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 
         foreach ($recipes as $recipe){
             $result[] = new Recipe(
                 $recipe['title'],
                 $recipe['description'],
                 $recipe['image'],
+                $recipe['ingredient'],
+                $recipe['kcal']
             );
         }
         return $result;
